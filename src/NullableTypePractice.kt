@@ -10,4 +10,12 @@ fun main() {
     var size = name2?.length ?: 0
 
     println(size)
+
+    var amount: Int? = 1000
+    displayAmount(amount)
+}
+
+fun displayAmount(amount: Int?) {
+    var amount = amount ?: 0
+    print("amount is $amount")
 }
